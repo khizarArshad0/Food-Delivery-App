@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:elevation="20dp"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="20dp">
+
+    <!-- Image Section -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_fireplace_24"
+        android:layout_marginEnd="15dp" />
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Roasted Platter"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 Pcs Behari Rolls, 6pcs Wings Served with Fries Sauce"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Price and Add Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Price -->
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Rs. 1,200.00"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:background="#ffca08"
+                android:textSize="14sp" />
+
+            <!-- Add Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+            <Button
+                android:id="@+id/item_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#d40000"
+                android:text="ADD"
+                android:textSize="13dp"
+                android:layout_gravity="left"
+                android:textAllCaps="false"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/white"
+                android:drawableRight="@drawable/baseline_shopping_cart_new"
+                android:paddingHorizontal="12dp" />
+                <ImageView
+                    android:id="@+id/item_favorite_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_favorite_border_24"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="70dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Favorite Icon -->
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Item Image -->
+    <ImageView
+        android:id="@+id/popup_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_fireplace_24"
+        android:contentDescription="Item Image"
+       />
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/popup_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <!-- Description Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <!-- Item Description -->
+    <TextView
+        android:id="@+id/popup_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <!-- Price Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Item Price -->
+    <TextView
+        android:id="@+id/popup_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0.00"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Quantity Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/quantity_decrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#d40000"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/popup_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/quantity_increase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#006400"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/popup_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ffca08"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+</LinearLayout>

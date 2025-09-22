@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp"
+>
+
+    <!-- Item Name Text -->
+    <TextView
+        android:id="@+id/cart_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="start"/>
+
+    <!-- Quantity Text -->
+    <TextView
+        android:id="@+id/cart_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 0"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="start"/>
+
+    <!-- Price Text -->
+    <TextView
+        android:id="@+id/cart_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: Rs. 0.00"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="start"/>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/cart_item_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Delete"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="#d40000"
+        android:layout_gravity="center"
+        android:drawablePadding="8dp"
+
+        android:elevation="2dp" />
+</LinearLayout>

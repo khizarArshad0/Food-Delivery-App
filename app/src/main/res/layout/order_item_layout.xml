@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_marginBottom="8dp">
+
+    <!-- Phone Label and Value -->
+    <TextView
+        android:id="@+id/cart_item_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Phone:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/cart_item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="123-456-7890"
+        android:layout_marginTop="4dp"
+        android:textColor="#555" />
+
+    <!-- Address Label and Value -->
+    <TextView
+        android:id="@+id/cart_item_address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cart_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample Address"
+        android:layout_marginTop="4dp"
+        android:textColor="#555" />
+
+    <!-- Status Label and Value -->
+    <TextView
+        android:id="@+id/cart_item_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cart_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:layout_marginTop="4dp"
+        android:textColor="#555" />
+
+    <!-- Order Details Label and Value -->
+    <TextView
+        android:id="@+id/cart_item_order_details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Details:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:text="h3llo"
+        android:id="@+id/cart_item_user_id"/>
+    <TextView
+        android:id="@+id/cart_item_order_details"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Item details here"
+        android:layout_marginTop="4dp"
+        android:textColor="#555" />
+
+    <!-- Total Price Label and Value -->
+    <TextView
+        android:id="@+id/cart_item_total_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cart_item_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 500"
+        android:layout_marginTop="4dp"
+        android:textColor="#333" />
+
+</LinearLayout>
